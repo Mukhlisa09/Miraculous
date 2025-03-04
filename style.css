@@ -1,0 +1,51 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(150, 72, 72);
+}
+
+/* Parallax effect */
+.parallax {
+    height: 100vh; /* Full screen height */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Background Images */
+.image1 {
+    background-image: url('marinette.jpg');
+}
+
+.image2 {
+    background-image: url('ladybug.jpg');
+}
+
+.image3 {
+    background-image: url('miraculous.jpg');
+}
+
+/* Text Content */
+.text-container {
+    height: 300px;
+    background-color: rgb(253, 165, 165);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* Disable parallax effect for smaller screens */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
